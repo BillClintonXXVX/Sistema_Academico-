@@ -33,7 +33,7 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Datos Institucionales <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="datos_institucionales.php">Datos Institucionales</a></li>
+                      <li><a href="ListaMenu/DatosInstitucionales/datos_institucionales.php">Datos Institucionales</a></li>
                       <li><a href="periodo_academico.php">Periodo Académico</a></li>
                       <li><a href="presente_per_acad.php">Presente Periodo Académico</a></li>
                       <li><a href="programa_estudios.php">Programa de Estudios</a></li>
@@ -60,7 +60,7 @@
                   </li>
                   <li><a><i class="fa fa-book"></i> Estudiantes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="estudiantes.php">Estudiante</a></li>
+                      <li><a href="estudiantes.php" >Estudiante</a></li>
                       <li><a href="usuario_estudiante.php">Usuarios Estudiante</a></li>
                     </ul>
                   </li>
