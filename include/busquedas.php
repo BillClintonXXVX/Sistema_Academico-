@@ -36,6 +36,10 @@ function buscarDocenteById($conexion, $id){
     return mysqli_query($conexion, $sql);
 }
 
+function buscarDatosInst($conexion){
+    $sql = "SELECT * FROM datos_institucionales";
+    return mysqli_query($conexion, $sql);
+}
 
 
 ?>
