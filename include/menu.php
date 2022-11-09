@@ -1,7 +1,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="./index.php"  class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -33,35 +33,35 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Datos Institucionales <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="ListaMenu/DatosInstitucionales/datos_institucionales.php">Datos Institucionales</a></li>
-                      <li><a href="periodo_academico.php">Periodo Académico</a></li>
-                      <li><a href="presente_per_acad.php">Presente Periodo Académico</a></li>
-                      <li><a href="programa_estudios.php">Programa de Estudios</a></li>
-                      <li><a href="modulo_formativo.php">Modulos formativos</a></li>
-                      <li><a href="semestre.php">Semestre</a></li>
-                      <li><a href="unidad_didactica.php">Unidades didacticas</a></li>
-                      <li><a href="cargo.php">Cargo</a></li>
-                      <li><a href="genero.php">Género</a></li>
+                      <li><a href="Datos_institucionales.php">Datos Institucionales</a></li>
+                      <li><a href="Periodo_academico.php">Periodo Académico</a></li>
+                      <li><a href="Presente_periodo_academico.php">Presente Periodo Académico</a></li>
+                      <li><a href="Programa_estudios.php">Programa de Estudios</a></li>
+                      <li><a href="Modulos_formativos.php">Modulos formativos</a></li>
+                      <li><a href="Semestre.php">Semestre</a></li>
+                      <li><a href="Unidades_didacticas.php">Unidades didacticas</a></li>
+                      <li><a href="Cargo.php">Cargo</a></li>
+                      <li><a href="Genero.php">Género</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Programación Académica <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="prog_ud.php">Programación de Unidades Didacticas</a></li>
-                      <li><a href="matricula.php"> Matrícula</a></li>
-                      <li><a href="calificacion.php"> Calificaciones</a></li>
-                      <li><a href="condicion.php"> Condición</a></li>
+                      <li><a href="Programacion_Unidades_didacticas.php">Programación de Unidades Didacticas</a></li>
+                      <li><a href="Matricula.php"> Matrícula</a></li>
+                      <li><a href="Calificaciones.php"> Calificaciones</a></li>
+                      <li><a href="Condicion.php"> Condición</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Docentes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="docentes.php">Docente</a></li>
-                      <li><a href="usuarios_docentes.php">Usuarios Docentes</a></li>
+                      <li><a href="Docentes.php">Docente</a></li>
+                      <li><a href="Usuario_docentes.php">Usuarios Docentes</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-book"></i> Estudiantes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="estudiantes.php" >Estudiante</a></li>
-                      <li><a href="usuario_estudiante.php">Usuarios Estudiante</a></li>
+                      <li><a href="Estudiantes.php">Estudiante</a></li>
+                      <li><a href="Usuario_estudiante.php">Usuarios Estudiante</a></li>
                     </ul>
                   </li>
                 </ul>
