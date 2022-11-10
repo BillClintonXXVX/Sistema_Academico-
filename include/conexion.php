@@ -1,6 +1,6 @@
 <?php
 // conexion utiliza servidor-usuario-password-base de datos
-$conexion = mysqli_connect("localhost", "ceicom_BillClinton", "pqH(LkV]8#={", "ceicom_BillClinton");
+$conexion = mysqli_connect("localhost", "root", "", "sisacad");
 if ($conexion) {
 
 } else {
