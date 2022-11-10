@@ -6,7 +6,7 @@
 
             <div class="clearfix"></div>
              <?php
-            $buscar_userdocente_sesion = buscarUserDocente($conexion, $_SESSION['id_usu_sisacad_iesthuanta']);
+            $buscar_userdocente_sesion = buscarUserDocenteById($conexion, $_SESSION['id_usu_sisacad_iesthuanta']);
             $res_b_u_s = mysqli_fetch_array($buscar_userdocente_sesion);
              ?>
             <!-- menu profile quick info -->
@@ -98,7 +98,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="Gentella/production/images/img.jpg" alt=""><?php echo $res_b_u_s['usuario']; ?>
+                    <img src="./Gentella/production/images/img.jpg" alt=""><?php echo $res_b_u_s['usuario']; ?>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">

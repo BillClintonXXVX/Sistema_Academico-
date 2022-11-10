@@ -72,8 +72,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_user_estudiante['usuario'];  ?></td>
                           <td><?php echo $res_b_user_estudiante['password']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_user_estudiante['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_user_estudiante['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="editar_usuario_estudiante.php?id=<?php echo $res_b_user_estudiante['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="operaciones/eliminarUserEstudiante.php?id=<?php echo $res_b_user_estudiante['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php
