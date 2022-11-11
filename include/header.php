@@ -28,6 +28,9 @@ include "verificar_sesion.php";
     <link href="Gentella/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="Gentella/build/css/custom.min.css" rel="stylesheet">
+
+
+
   </head>
   <body class="nav-md">
     <div class="container body">
