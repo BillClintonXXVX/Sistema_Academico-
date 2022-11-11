@@ -34,7 +34,7 @@
         <div class="animate form login_form">
           <section class="login_content">
           <img width="150px" src="Gentella/img/logo iestp.png" alt="">
-            <form method="POST" action="operaciones/iniciar_sesion.php">
+            <form method="POST" action="Operacion/iniciar_sesion.php">
               <h1>Inicio de Sesión</h1>
               <div>
                 <input type="text" name="usuario" class="form-control" placeholder="Usuario" required="" />

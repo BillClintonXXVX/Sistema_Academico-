@@ -30,7 +30,7 @@
       <div class="login_wrapper">
 
           <section class="login_content">
-            <form action="operaciones/registrar_usuariod.php" method="POST">
+            <form action="OperacionRegistrar/registrar_usuariod.php" method="POST">
               <h1>Crear Cuenta</h1>
               <div>
                 <input type="text" class="form-control" name="docente" placeholder="docente" required="" />

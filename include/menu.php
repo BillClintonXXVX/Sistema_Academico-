@@ -1,7 +1,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.php"  class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.php"  class="site_title"><i class="fa fa-paw"></i> <span>SIS-AC!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -15,7 +15,7 @@
                 <img src="Gentella/production/images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Welcome,</span>
+                <span>Bienvenido,</span>
                 <h2><?php echo $res_b_u_s['usuario']; ?></h2>
               </div>
             </div>
@@ -54,7 +54,7 @@
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Docentes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="Docentes.php">Docente</a></li>
+                      <li><a href="./Docentes.php">Docente</a></li>
                       <li><a href="Usuario_docentes.php">Usuarios Docentes</a></li>
                     </ul>
                   </li>

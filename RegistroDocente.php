@@ -1,5 +1,5 @@
 <?php
-include "../include/header.php";
+include "include/header.php";
 ?>
 
 <!-- page content -->
@@ -14,7 +14,7 @@ include "../include/header.php";
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_estudiante.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="../OperacionRegistrar/registrar_estudiante.php">
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">DNI :
@@ -176,5 +176,5 @@ include "../include/header.php";
         <!-- /page content -->
 
 <?php
-include "../include/footer.php";
+include "include/footer.php";
 ?>
