@@ -41,10 +41,10 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Unidades Didacticas</h2>
+                    <h2>Relacion De Usuarios user_estudiante</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="RegistroUnidDidac.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroUserEstudiante.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -55,35 +55,25 @@ include "include/verificar_sesion.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>Descripcion</th>
-                          <th>Id Programa Estudio</th>
-                          <th>Id Modulo</th>
-                          <th>Id Semestre</th>
-                          <th>Creditos</th>
-                          <th>Horas</th>
-                          <th>Tipo</th>
-                          <th>Orden</th>
+                          <th>ID ESTUDIANTE</th>
+                          <th>USUARIO</th>
+                          <th>PASSWORD</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_unidades_didacticas = mostrarUnidDidacticas($conexion);
-                        while ($res_b_unidades_didacticas = mysqli_fetch_array($b_unidades_didacticas)) {
+                        $b_user_estudiante = mostrarUserEstudiante($conexion);
+                        while ($res_b_user_estudiante = mysqli_fetch_array($b_user_estudiante)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_unidades_didacticas['id']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['descripcion']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['id_programa_estudio'];  ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['id_modulo']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['id_semestre']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['creditos']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['horas']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['tipo']; ?></td>
-                          <td><?php echo $res_b_unidades_didacticas['orden']; ?></td>
+                          <td><?php echo $res_b_user_estudiante['id']; ?></td>
+                          <td><?php echo $res_b_user_estudiante['id_estudiante']; ?></td>
+                          <td><?php echo $res_b_user_estudiante['usuario'];  ?></td>
+                          <td><?php echo $res_b_user_estudiante['password']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_unidades_didacticas['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_unidades_didacticas['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            
+                            <a href="OperacionEliminar/EliminarUserEstudiante.php?id=<?php echo $res_b_user_estudiante['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

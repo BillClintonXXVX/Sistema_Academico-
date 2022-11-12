@@ -78,8 +78,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_progr_unid_didac['id_semestre']; ?></td>
                           <td><?php echo $res_b_progr_unid_didac['cant_calificacion']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_progr_unid_didac['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_progr_unid_didac['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarProgUnidDidac.php?id=<?php echo $res_b_progr_unid_didac['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarProgUnidDidac.php?id=<?php echo $res_b_progr_unid_didac['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

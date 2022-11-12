@@ -22,7 +22,7 @@ $res_b_estudiante = mysqli_fetch_array($busc_estudiante);
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/actualizar_estudiante.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="OperacionActualizar/ActualizarEstudiante.php">
                         <input type="hidden" name="id" value="<?php echo $id_estudiante;?>">
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">DNI :

@@ -41,10 +41,10 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Presente Periodo Academico</h2>
+                    <h2>Programa De Estudios</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="RegistroPresentePeriodoAcad.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroProgEstudios.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -55,22 +55,27 @@ include "include/verificar_sesion.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>id_peridod_acad</th>
+                          <th>codigo</th>
+                          <th>tipo</th>
+                          <th>nombre</th>
+                          <th>resolucion</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_pres_periodo_acad = mostrarPresentePeriodoAcad($conexion);
-                        while ($res_b_pres_periodo_acad = mysqli_fetch_array($b_pres_periodo_acad)) {
+                        $b_programa_estudios = mostrarProgramaEstudios($conexion);
+                        while ($res_b_programa_estudios = mysqli_fetch_array($b_programa_estudios)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_pres_periodo_acad['id']; ?></td>
-                          <td><?php echo $res_b_pres_periodo_acad['id_periodo_acad']; ?></td>
-              
+                          <td><?php echo $res_b_programa_estudios['id']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['codigo']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['tipo'];  ?></td>
+                          <td><?php echo $res_b_programa_estudios['nombre']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['resolucion']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_pres_periodo_acad['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_pres_periodo_acad['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarProgramaEstudios.php?id=<?php echo $res_b_programa_estudios['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarProgramaEstudios.php?id=<?php echo $res_b_programa_estudios['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

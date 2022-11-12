@@ -1,10 +1,18 @@
 <?php
-function buscarGenero($conexion){
-    $sql = "SELECT * FROM genero";
+function buscarGenero($conexion,$genero){
+    $sql = "SELECT * FROM genero WHERE genero='$genero'";
     return mysqli_query($conexion, $sql);
 }
-function buscarCargo($conexion){
-    $sql = "SELECT * FROM cargo";
+function buscarGeneroById($conexion,$id){
+    $sql = "SELECT * FROM genero WHERE id='$id'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarCargo($conexion,$cargo){
+    $sql = "SELECT * FROM cargo WHERE descripcion='$cargo'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarCargoById($conexion,$id){
+    $sql = "SELECT * FROM cargo WHERE id='$id'";
     return mysqli_query($conexion, $sql);
 }
 function buscarProgramaEstudio($conexion){
@@ -31,10 +39,16 @@ function buscarEstudiantes($conexion){
     $sql = "SELECT * FROM estudiante";
     return mysqli_query($conexion, $sql);
 }
+
+function buscarDocenteByDni($conexion, $dni){
+    $sql = "SELECT * FROM docente WHERE dni='$dni'";
+    return mysqli_query($conexion, $sql);
+}
 function buscarDocenteById($conexion, $id){
     $sql = "SELECT * FROM docente WHERE id=$id";
     return mysqli_query($conexion, $sql);
 }
+
 
 function buscarUserDocenteById($conexion, $id){
     $sql = "SELECT * FROM usuarios_docentes WHERE id=$id";

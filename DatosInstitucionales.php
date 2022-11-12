@@ -41,10 +41,10 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Periodo Academico</h2>
+                    <h2>Datos Institucionales</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="RegistroPeriodoAcad.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroDatosInstitucionales.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -54,30 +54,38 @@ include "include/verificar_sesion.php";
                     <table id="example" class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>Id</th>
-                          <th>nombre</th>
-                          <th>fecha_inicio</th>
-                          <th>fecha_fin</th>
-                          <th>director</th>
-                          <th>fecha_actas</th>
+                          <th>Codigo Modular</th>
+                          <th>Ruc</th>
+                          <th>Nombre Institucion/th>
+                          <th>Departamento</th>
+                          <th>Provincia</th>
+                          <th>Distrito</th>
+                          <th>Direccion</th>
+                          <th>Telefono</th>
+                          <th>Correo</th>
+                          <th>Nro Resolucion</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_periodo_acad = mostrarPeriodoAcad($conexion);
-                        while ($res_b_periodo_acad = mysqli_fetch_array($b_periodo_acad)) {
-                        ?>
+                        $b_DatosInst = buscarDatosInst($conexion);
+                        while ($res_b_DatosInst = mysqli_fetch_array($b_DatosInst)) {
+                        ?>s
                         <tr>
-                          <td><?php echo $res_b_periodo_acad['id']; ?></td>
-                          <td><?php echo $res_b_periodo_acad['nombre']; ?></td>
-                          <td><?php echo $res_b_periodo_acad['fecha_inicio'];  ?></td>
-                          <td><?php echo $res_b_periodo_acad['fecha_fin']; ?></td>
-                          <td><?php echo $res_b_periodo_acad['director']; ?></td>
-                          <td><?php echo $res_b_periodo_acad['fecha_actas']; ?></td>
+                          <td><?php echo $res_b_DatosInst['cod_modular']; ?></td>
+                          <td><?php echo $res_b_DatosInst['ruc']; ?></td>
+                          <td><?php echo $res_b_DatosInst['nombre_institucion'];  ?></td>
+                          <td><?php echo $res_b_DatosInst['departamento']; ?></td>
+                          <td><?php echo $res_b_DatosInst['provincia']; ?></td>
+                          <td><?php echo $res_b_DatosInst['distrito']; ?></td>
+                          <td><?php echo $res_b_DatosInst['direccion']; ?></td>
+                          <td><?php echo $res_b_DatosInst['telefono']; ?></td>
+                          <td><?php echo $res_b_DatosInst['correo']; ?></td>
+                          <td><?php echo $res_b_DatosInst['nro_resolucion']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-danger">Eliminar</a>
+                          <a href="EditarDatosInstitucionales.php?id=<?php echo $res_b_DatosInstitucionales['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarDatosInstitucionales.php?id=<?php echo $res_b_DatosInstitucionales['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

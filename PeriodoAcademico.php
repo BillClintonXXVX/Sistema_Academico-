@@ -41,10 +41,10 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Relacion De Usuario Docente</h2>
+                    <h2>Periodo Academico</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="RegistroUserDocente.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroPeriodoAcad.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -55,25 +55,29 @@ include "include/verificar_sesion.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>ID DOCENTE</th>
-                          <th>USUARIO</th>
-                          <th>PASSWORD</th>
+                          <th>nombre</th>
+                          <th>fecha_inicio</th>
+                          <th>fecha_fin</th>
+                          <th>director</th>
+                          <th>fecha_actas</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_user_docente = mostrarUserDocente($conexion);
-                        while ($res_b_user_docente = mysqli_fetch_array($b_user_docente)) {
+                        $b_periodo_acad = mostrarPeriodoAcad($conexion);
+                        while ($res_b_periodo_acad = mysqli_fetch_array($b_periodo_acad)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_user_docente['id']; ?></td>
-                          <td><?php echo $res_b_user_docente['id_docente']; ?></td>
-                          <td><?php echo $res_b_user_docente['usuario'];  ?></td>
-                          <td><?php echo $res_b_user_docente['password']; ?></td>
+                          <td><?php echo $res_b_periodo_acad['id']; ?></td>
+                          <td><?php echo $res_b_periodo_acad['nombre']; ?></td>
+                          <td><?php echo $res_b_periodo_acad['fecha_inicio'];  ?></td>
+                          <td><?php echo $res_b_periodo_acad['fecha_fin']; ?></td>
+                          <td><?php echo $res_b_periodo_acad['director']; ?></td>
+                          <td><?php echo $res_b_periodo_acad['fecha_actas']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_user_docente['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_user_docente['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarPeriodoAcad.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarPeriodoAcad.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

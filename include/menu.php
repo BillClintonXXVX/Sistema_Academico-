@@ -33,20 +33,20 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Datos Institucionales <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="Datos_institucionales.php">Datos Institucionales</a></li>
-                      <li><a href="Periodo_academico.php">Periodo Académico</a></li>
-                      <li><a href="Presente_periodo_academico.php">Presente Periodo Académico</a></li>
-                      <li><a href="Programa_estudios.php">Programa de Estudios</a></li>
-                      <li><a href="Modulos_formativos.php">Modulos formativos</a></li>
+                      <li><a href="DatosInstitucionales.php">Datos Institucionales</a></li>
+                      <li><a href="PeriodoAcademico.php">Periodo Académico</a></li>
+                      <li><a href="PresentePeriodoAcad.php">Presente Periodo Académico</a></li>
+                      <li><a href="ProgramaEstudios.php">Programa de Estudios</a></li>
+                      <li><a href="ModulosFormativos.php">Modulos formativos</a></li>
                       <li><a href="Semestre.php">Semestre</a></li>
-                      <li><a href="Unidades_didacticas.php">Unidades didacticas</a></li>
+                      <li><a href="UnidadesDidacticas.php">Unidades didacticas</a></li>
                       <li><a href="Cargo.php">Cargo</a></li>
                       <li><a href="Genero.php">Género</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Programación Académica <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="Programacion_Unidades_didacticas.php">Programación de Unidades Didacticas</a></li>
+                      <li><a href="ProgramacionUnidDidac.php">Programación de Unidades Didacticas</a></li>
                       <li><a href="Matricula.php"> Matrícula</a></li>
                       <li><a href="Calificaciones.php"> Calificaciones</a></li>
                       <li><a href="Condicion.php"> Condición</a></li>
@@ -55,13 +55,13 @@
                   <li><a><i class="fa fa-desktop"></i> Docentes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="./Docentes.php">Docente</a></li>
-                      <li><a href="Usuario_docentes.php">Usuarios Docentes</a></li>
+                      <li><a href="UsuarioDocentes.php">Usuarios Docentes</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-book"></i> Estudiantes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="Estudiantes.php">Estudiante</a></li>
-                      <li><a href="Usuario_estudiante.php">Usuarios Estudiante</a></li>
+                      <li><a href="UsuarioEstudiante.php">Usuarios Estudiante</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -110,7 +110,7 @@
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="operaciones/cerrar_sesion.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="Operacion/cerrar_sesion.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                   </ul>
                 </li>
 

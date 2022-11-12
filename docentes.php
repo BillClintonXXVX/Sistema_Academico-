@@ -86,8 +86,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_docente['cond_laboral']; ?></td>
                           <td><?php echo $res_b_docente['id_cargo']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_docente['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_docente['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarDocente.php?id=<?php echo $res_b_docente['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarDocente.php?id=<?php echo $res_b_docente['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

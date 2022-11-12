@@ -41,10 +41,10 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Datos Institucionales</h2>
+                    <h2>Presente Periodo Academico</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="RegistroDatosInstitucionales.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="RegistroPresentePeriodoAcad.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -54,38 +54,23 @@ include "include/verificar_sesion.php";
                     <table id="example" class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>Codigo Modular</th>
-                          <th>Ruc</th>
-                          <th>Nombre Institucion/th>
-                          <th>Departamento</th>
-                          <th>Provincia</th>
-                          <th>Distrito</th>
-                          <th>Direccion</th>
-                          <th>Telefono</th>
-                          <th>Correo</th>
-                          <th>Nro Resolucion</th>
+                          <th>Id</th>
+                          <th>id_peridod_acad</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_DatosInst = buscarDatosInst($conexion);
-                        while ($res_b_DatosInst = mysqli_fetch_array($b_DatosInst)) {
-                        ?>s
+                        $b_pres_periodo_acad = mostrarPresentePeriodoAcad($conexion);
+                        while ($res_b_pres_periodo_acad = mysqli_fetch_array($b_pres_periodo_acad)) {
+                        ?>
                         <tr>
-                          <td><?php echo $res_b_DatosInst['cod_modular']; ?></td>
-                          <td><?php echo $res_b_DatosInst['ruc']; ?></td>
-                          <td><?php echo $res_b_DatosInst['nombre_institucion'];  ?></td>
-                          <td><?php echo $res_b_DatosInst['departamento']; ?></td>
-                          <td><?php echo $res_b_DatosInst['provincia']; ?></td>
-                          <td><?php echo $res_b_DatosInst['distrito']; ?></td>
-                          <td><?php echo $res_b_DatosInst['direccion']; ?></td>
-                          <td><?php echo $res_b_DatosInst['telefono']; ?></td>
-                          <td><?php echo $res_b_DatosInst['correo']; ?></td>
-                          <td><?php echo $res_b_DatosInst['nro_resolucion']; ?></td>
+                          <td><?php echo $res_b_pres_periodo_acad['id']; ?></td>
+                          <td><?php echo $res_b_pres_periodo_acad['id_periodo_acad']; ?></td>
+              
                           <td>
-                            <a class="btn btn-primary">Editar</a>
-                            <a class="btn btn-danger">Eliminar</a>
+                            <a href="EditarPresentePeriodoAcad.php?id=<?php echo $res_b_pres_periodo_acad['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarPresentePeriodoAcad.php?id=<?php echo $res_b_pres_periodo_acad['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php
