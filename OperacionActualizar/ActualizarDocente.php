@@ -4,21 +4,17 @@ include "../include/busquedas.php";
 $id = $_POST['id'];
 $dni = $_POST['dni'];
 $nom_ap = $_POST['nom_ap'];
-$id_genero = $_POST['id_genero'];
 $fecha_nac = $_POST['fecha_nac'];
 $direccion = $_POST['direccion'];
 $email = $_POST['email'];
 $cel = $_POST['cel'];
-$anio_ingreso = $_POST['anio_ingreso'];
-$programa_estudio = $_POST['programa_estudio'];
-$semestre = $_POST['semestre'];
-$seccion = $_POST['seccion'];
-$turno = $_POST['turno'];
-$condicion = $_POST['condicion'];
-$discapacidad = $_POST['discapacidad'];
+$id_genero = $_POST['id_genero'];
+$nivel_edu = $_POST['nivel_edu'];
+$cond_lab = $_POST['cond_lab'];
+$id_cargo = $_POST['id_cargo'];
 
-$sql = "UPDATE estudiante SET dni='$dni', apellidos_nombres='$nom_ap', id_genero='$id_genero', fecha_nac='$fecha_nac', direccion='$direccion', correo='$email', telefono='$cel', anio_ingreso='$anio_ingreso', id_programa_estudios='$programa_estudio', id_semestre='$semestre', seccion='$seccion', turno='$turno', id_condicion='$condicion', discapacidad='$discapacidad' WHERE id='$id'";
 
+$sql = "UPDATE docente SET dni='$dni', apellidos_nombres='$nom_ap', fecha_nac='$fecha_nac', direccion='$direccion', correo='$email', telefono='$cel', id_genero='$id_genero', nivel_educacion='$nivel_edu', cond_laboral='$cond_lab', id_cargo='$id_cargo' WHERE id='$id'";
 $ejec_consulta = mysqli_query($conexion, $sql);
 
 if ($ejec_consulta) {
@@ -35,4 +31,3 @@ if ($ejec_consulta) {
 			";
 }
 mysqli_close($conexion);
-?>

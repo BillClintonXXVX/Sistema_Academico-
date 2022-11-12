@@ -76,8 +76,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_periodo_acad['director']; ?></td>
                           <td><?php echo $res_b_periodo_acad['fecha_actas']; ?></td>
                           <td>
-                            <a href="EditarPeriodoAcad.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="OperacionEliminar/EliminarPeriodoAcad.php?id=<?php echo $res_b_estudiantes['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="EditarPeriodoAcad.php?id=<?php echo $res_b_periodo_acad['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarPeriodoAcad.php?id=<?php echo $res_b_periodo_acad['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

@@ -56,7 +56,7 @@ include "include/verificar_sesion.php";
                         <tr>
                           <th>Codigo Modular</th>
                           <th>Ruc</th>
-                          <th>Nombre Institucion/th>
+                          <th>Nombre Institucion</th>
                           <th>Departamento</th>
                           <th>Provincia</th>
                           <th>Distrito</th>

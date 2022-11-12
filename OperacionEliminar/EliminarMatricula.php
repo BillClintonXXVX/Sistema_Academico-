@@ -2,7 +2,7 @@
 include "../include/conexion.php"; 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM estudiante WHERE id='$id'";
+$sql = "DELETE FROM matricula WHERE id='$id'";
 $ejecutar = mysqli_query($conexion, $sql);
 
 if ($ejecutar) {

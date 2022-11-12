@@ -45,8 +45,8 @@ $res_b_estudiante = mysqli_fetch_array($busc_estudiante);
                           <option value="">Seleccione</option>
                           <?php
                           $id_genero_estudiante = $res_b_estudiante['id_genero'];
-                          $buscar_genero = buscarGenero($conexion);
-                          while ($res_b_genero = mysqli_fetch_array($buscar_genero)) {
+                          $mostrar_genero = mostrarGenero($conexion);
+                          while ($res_b_genero = mysqli_fetch_array($mostrar_genero)) {
                             $id_genero = $res_b_genero['id'];
                           ?>
                           <option value="<?php echo $res_b_genero['id']; ?>" 
@@ -103,8 +103,8 @@ $res_b_estudiante = mysqli_fetch_array($busc_estudiante);
                         <select name="programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_pe = buscarProgramaEstudio($conexion);
-                          while ($res_b_pe = mysqli_fetch_array($buscar_pe)) {
+                          $mostrar_pe = mostrarProgramaEstudios($conexion);
+                          while ($res_b_pe = mysqli_fetch_array($mostrar_pe)) {
                           ?>
                           <option value="<?php echo $res_b_pe['id']; ?>"
                           <?php if ($res_b_estudiante['id_programa_estudios'] == $res_b_pe['id']) {
@@ -124,8 +124,8 @@ $res_b_estudiante = mysqli_fetch_array($busc_estudiante);
                         <select name="semestre" id="semestre" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_sem = buscarSemestre($conexion);
-                          while ($res_b_sem = mysqli_fetch_array($buscar_sem)) {
+                          $mostrar_sem = mostrarSemestre($conexion);
+                          while ($res_b_sem = mysqli_fetch_array($mostrar_sem)) {
                           ?>
                           <option value="<?php echo $res_b_sem['id']; ?>"
                           <?php if ($res_b_estudiante['id_semestre'] == $res_b_sem['id']) {
@@ -159,8 +159,8 @@ $res_b_estudiante = mysqli_fetch_array($busc_estudiante);
                         <select name="condicion" id="condicion" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_condicion = buscarCondicion($conexion);
-                          while ($res_b_condicion = mysqli_fetch_array($buscar_condicion)) {
+                          $mostrar_condicion = mostrarCondicion($conexion);
+                          while ($res_b_condicion = mysqli_fetch_array($mostrar_condicion)) {
                           ?>
                           <option value="<?php echo $res_b_condicion['id']; ?>"
                           <?php if ($res_b_estudiante['id_condicion'] == $res_b_condicion['id']) {

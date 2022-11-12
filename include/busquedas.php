@@ -31,6 +31,25 @@ function buscarCondicionById($conexion,$id){
 }
 
 //FUNCIONES DE SEMESTRE
+function buscarSemestreByDescripcion($conexion,$descripcion){
+    $sql = "SELECT * FROM semestre WHERE descripcion='$descripcion'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarSemestreById($conexion,$id){
+    $sql = "SELECT * FROM semestre WHERE id='$id'";
+    return mysqli_query($conexion, $sql);
+}
+
+
+//FUNCIONES DE PERIODO ACADEMICO
+function buscarPeriodoAcadByNombre($conexion,$nombre){
+    $sql = "SELECT * FROM periodo_academico WHERE nombre='$nombre'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarSemestresById($conexion,$id){
+    $sql = "SELECT * FROM semestre WHERE id='$id'";
+    return mysqli_query($conexion, $sql);
+}
 
 //FUNCIONES DE ESTUDIANTE
 function buscarEstudianteByDni($conexion, $dni){
