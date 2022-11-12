@@ -65,7 +65,7 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_estudiantes = buscarEstudiantes($conexion);
+                        $b_estudiantes = mostrarEstudiantes($conexion);
                         while ($res_b_estudiantes = mysqli_fetch_array($b_estudiantes)) {
                         ?>
                         <tr>

@@ -14,7 +14,7 @@ include "include/header.php";
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_estudiante.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="OperacionRegistrar/RegistrarProgUnidDidac.php">
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">DNI :
@@ -161,7 +161,7 @@ include "include/header.php";
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <a href="Estudiantes.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                          <a href="ProgramacionUnidDidac.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
 						              <button class="btn btn-primary" type="reset">Limpiar</button>
                           <button type="submit" class="btn btn-success">Guardar</button>
                         </div>
