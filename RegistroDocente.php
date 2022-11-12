@@ -68,7 +68,7 @@ include "include/header.php";
                         <select name="id_genero" id="id_genero" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_genero = buscarGenero($conexion);
+                          $buscar_genero = mostrarGenero($conexion);
                           while ($res_b_genero = mysqli_fetch_array($buscar_genero)) {
                           ?>
                           <option value="<?php echo $res_b_genero['id']; ?>"><?php echo $res_b_genero['genero']; ?></option>
@@ -101,7 +101,7 @@ include "include/header.php";
                         <select name="id_cargo" id="id_cargo" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_cargo = buscarCargo($conexion);
+                          $buscar_cargo = mostrarCargo($conexion);
                           while ($res_b_cargo = mysqli_fetch_array($buscar_cargo)) {
                           ?>
                           <option value="<?php echo $res_b_cargo['id']; ?>"><?php echo $res_b_cargo['descripcion']; ?></option>

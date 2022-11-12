@@ -24,7 +24,7 @@ $ejec_consulta = mysqli_query($conexion, $sql);
 if ($ejec_consulta) {
     echo "<script>
 					alert('Datos actualizados de manera Correcta');
-					window.location= '../estudiantes.php';
+					window.location= '../Docentes.php';
 				</script>
 			";
 }else{

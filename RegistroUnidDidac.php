@@ -8,7 +8,7 @@ include "include/header.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Registro de Estudiante</h2>
+                    <h2>Registro De Unidades Didacticas</h2>
                     
                     <div class="clearfix"></div>
                   </div>
@@ -36,8 +36,8 @@ include "include/header.php";
                         <select name="id_genero" id="id_genero" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_genero = buscarGenero($conexion);
-                          while ($res_b_genero = mysqli_fetch_array($buscar_genero)) {
+                          $mostrar_genero = mostrarGenero($conexion);
+                          while ($res_b_genero = mysqli_fetch_array($mostrar_genero)) {
                           ?>
                           <option value="<?php echo $res_b_genero['id']; ?>"><?php echo $res_b_genero['genero']; ?></option>
                           <?php
@@ -89,8 +89,8 @@ include "include/header.php";
                         <select name="programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_pe = buscarProgramaEstudio($conexion);
-                          while ($res_b_pe = mysqli_fetch_array($buscar_pe)) {
+                          $mostrar_pe = mostrarProgramaEstudios($conexion);
+                          while ($res_b_pe = mysqli_fetch_array($mostrar_pe)) {
                           ?>
                           <option value="<?php echo $res_b_pe['id']; ?>"><?php echo $res_b_pe['nombre']; ?></option>
                           <?php
@@ -106,8 +106,8 @@ include "include/header.php";
                         <select name="semestre" id="semestre" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_sem = buscarSemestre($conexion);
-                          while ($res_b_sem = mysqli_fetch_array($buscar_sem)) {
+                          $mostrar_sem = mostrarSemestre($conexion);
+                          while ($res_b_sem = mysqli_fetch_array($mostrar_sem)) {
                           ?>
                           <option value="<?php echo $res_b_sem['id']; ?>"><?php echo $res_b_sem['descripcion']; ?></option>
                           <?php
@@ -137,8 +137,8 @@ include "include/header.php";
                         <select name="condicion" id="condicion" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_condicion = buscarCondicion($conexion);
-                          while ($res_b_condicion = mysqli_fetch_array($buscar_condicion)) {
+                          $mostrar_condicion = mostrarCondicion($conexion);
+                          while ($res_b_condicion = mysqli_fetch_array($mostrar_condicion)) {
                           ?>
                           <option value="<?php echo $res_b_condicion['id']; ?>"><?php echo $res_b_condicion['descripcion']; ?></option>
                           <?php
@@ -161,7 +161,7 @@ include "include/header.php";
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <a href="Estudiantes.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                          <a href="UnidadesDidacticas.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
 						              <button class="btn btn-primary" type="reset">Limpiar</button>
                           <button type="submit" class="btn btn-success">Guardar</button>
                         </div>

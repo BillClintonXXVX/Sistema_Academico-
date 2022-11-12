@@ -22,7 +22,7 @@ $res_b_condicion = mysqli_fetch_array($busc_condicion);
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="OperacionActualizar/Actualizarcondicion.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="OperacionActualizar/ActualizarCondicion.php">
                         <input type="hidden" name="id" value="<?php echo $id_condicion;?>">
                       
                       <div class="form-group">
@@ -43,9 +43,9 @@ $res_b_condicion = mysqli_fetch_array($busc_condicion);
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <a href="condicion.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                          <a href="Condicion.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
                           
-						  <button class="btn btn-primary" type="reset">Limpiar</button>
+						              <button class="btn btn-primary" type="reset">Limpiar</button>
                           <button type="submit" class="btn btn-success">Actualizar Datos</button>
                         </div>
                       </div>

@@ -20,7 +20,7 @@ include "include/header.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">DNI :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="dni" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="dni" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
@@ -36,7 +36,7 @@ include "include/header.php";
                         <select name="id_genero" id="id_genero" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_genero = buscarGenero($conexion);
+                          $buscar_genero = mostrarGenero($conexion);
                           while ($res_b_genero = mysqli_fetch_array($buscar_genero)) {
                           ?>
                           <option value="<?php echo $res_b_genero['id']; ?>"><?php echo $res_b_genero['genero']; ?></option>
@@ -72,7 +72,7 @@ include "include/header.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">NRO Celular :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="cel" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="cel" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
@@ -89,7 +89,7 @@ include "include/header.php";
                         <select name="programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_pe = buscarProgramaEstudio($conexion);
+                          $buscar_pe = mostrarProgramaEstudios($conexion);
                           while ($res_b_pe = mysqli_fetch_array($buscar_pe)) {
                           ?>
                           <option value="<?php echo $res_b_pe['id']; ?>"><?php echo $res_b_pe['nombre']; ?></option>
@@ -106,7 +106,7 @@ include "include/header.php";
                         <select name="semestre" id="semestre" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_sem = buscarSemestre($conexion);
+                          $buscar_sem = mostrarSemestre($conexion);
                           while ($res_b_sem = mysqli_fetch_array($buscar_sem)) {
                           ?>
                           <option value="<?php echo $res_b_sem['id']; ?>"><?php echo $res_b_sem['descripcion']; ?></option>
@@ -137,7 +137,7 @@ include "include/header.php";
                         <select name="condicion" id="condicion" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
-                          $buscar_condicion = buscarCondicion($conexion);
+                          $buscar_condicion = mostrarCondicion($conexion);
                           while ($res_b_condicion = mysqli_fetch_array($buscar_condicion)) {
                           ?>
                           <option value="<?php echo $res_b_condicion['id']; ?>"><?php echo $res_b_condicion['descripcion']; ?></option>

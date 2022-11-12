@@ -69,7 +69,7 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_DatosInst = mostrarDatosInst($conexion);
+                        $b_DatosInst = mostrarDatosInstitucionales($conexion);
                         while ($res_b_DatosInst = mysqli_fetch_array($b_DatosInst)) {
                         ?>s
                         <tr>

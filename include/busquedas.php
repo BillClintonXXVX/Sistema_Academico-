@@ -69,7 +69,7 @@ function buscarUserEstudianteById($conexion, $id){
 
 
 //FUNCIONES MOSTRAR
-function mostrarDatosInst($conexion){
+function mostrarDatosInstitucionales($conexion){
     $sql = "SELECT * FROM datos_institucionales";
     return mysqli_query($conexion, $sql);
 }
@@ -88,7 +88,7 @@ function mostrarProgramaEstudios($conexion){
     return mysqli_query($conexion, $sql);
 }
 
-function mostrarCalificacion($conexion){
+function mostrarCalificaciones($conexion){
     $sql = "SELECT * FROM calificaciones";
     return mysqli_query($conexion, $sql);
 }

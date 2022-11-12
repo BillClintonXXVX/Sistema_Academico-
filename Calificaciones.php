@@ -63,7 +63,7 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_calificacion = mostrarCalificacion($conexion);
+                        $b_calificacion = mostrarCalificaciones($conexion);
                         while ($res_b_calificacion = mysqli_fetch_array($b_calificacion)) {
                         ?>
                         <tr>

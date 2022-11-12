@@ -1,3 +1,11 @@
+<?php
+session_destroy();
+session_start();
+if (!empty($_SESSION['id_usu_sisacad_iesthuanta'])) {
+   header("location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
