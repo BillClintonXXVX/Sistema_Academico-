@@ -1,36 +1,25 @@
 <?php
 include "../include/conexion.php";
 include "../include/busquedas.php";
-$dni = $_POST['dni'];
-$nom_ap = $_POST['nom_ap'];
-$id_genero = $_POST['id_genero'];
-$fecha_nac = $_POST['fecha_nac'];
+$cod_modular = $_POST['cod_modular'];
+$ruc = $_POST['ruc'];
+$nombre_institucion = $_POST['nombre_inst'];
+$departamento = $_POST['departamento'];
+$provincia = $_POST['provincia'];
+$distrito = $_POST['distrito'];
 $direccion = $_POST['direccion'];
-$email = $_POST['email'];
-$cel = $_POST['cel'];
-$anio_ingreso = $_POST['anio_ingreso'];
-$programa_estudio = $_POST['programa_estudio'];
-$semestre = $_POST['semestre'];
-$seccion = $_POST['seccion'];
-$turno = $_POST['turno'];
-$condicion = $_POST['condicion'];
-$discapacidad = $_POST['discapacidad'];
+$telefono = $_POST['telefono'];
+$correo = $_POST['correo'];
+$nro_resolucion = $_POST['nro_reso'];
 
-$b_estudiante = buscarEstudianteByDni($conexion, $dni);
+
+$b_estudiante = buscarDatosInstByCodModular($conexion, $cod_modular);
 $c_r_b_estudiante = mysqli_num_rows($b_estudiante);
 if ($c_r_b_estudiante == 0) {//validamos que no haya registros en la base de datos
-	$insertar = "INSERT INTO estudiante (dni, apellidos_nombres, id_genero, fecha_nac, direccion, correo, telefono, anio_ingreso, id_programa_estudios, id_semestre, seccion, turno, id_condicion, discapacidad) VALUES ('$dni','$nom_ap','$id_genero', '$fecha_nac', '$direccion', '$email', '$cel', '$anio_ingreso', '$programa_estudio', '$semestre', '$seccion', '$turno', '$condicion', '$discapacidad')";
+	$insertar = "INSERT INTO datos_institucionales (cod_modular, ruc, nombre_institucion, departamento, provincia, distrito, direccion, telefono, correo, nro_resolucion) VALUES ('$cod_modular','$ruc','$nombre_institucion', '$departamento', '$provincia', '$distrito', '$direccion', '$telefono', '$correo', '$nro_resolucion')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	// registrar usuario
-	$b_id_estudiante = buscarEstudianteByDni($conexion, $dni);
-	$res_b_estudiante = mysqli_fetch_array($b_id_estudiante);
-	$id_estudiante = $res_b_estudiante['id'];
-	$pass = "@".$dni."#2022";
-	$password_fuerte = password_hash($pass, PASSWORD_DEFAULT);
-
-	$insertar_usu = "INSERT INTO usuarios_estudiante (id_estudiante, usuario, password) VALUES ('$id_estudiante', '$dni', '$password_fuerte')";
-	$ejec_insert_usu = mysqli_query($conexion, $insertar_usu);
-	if ($ejec_insert_usu) {
+	if ($ejecutar_insetar) {
 		echo "<script>
                 alert('Registro Exitoso');
                 window.location= '../DatosInstitucionales.php'

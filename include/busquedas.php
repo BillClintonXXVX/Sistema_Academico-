@@ -46,10 +46,11 @@ function buscarPeriodoAcadByNombre($conexion,$nombre){
     $sql = "SELECT * FROM periodo_academico WHERE nombre='$nombre'";
     return mysqli_query($conexion, $sql);
 }
-function buscarSemestresById($conexion,$id){
-    $sql = "SELECT * FROM semestre WHERE id='$id'";
+function buscarPeriodoAcadById($conexion,$id){
+    $sql = "SELECT * FROM periodo_academico WHERE id='$id'";
     return mysqli_query($conexion, $sql);
 }
+
 
 //FUNCIONES DE ESTUDIANTE
 function buscarEstudianteByDni($conexion, $dni){
@@ -85,7 +86,40 @@ function buscarUserEstudianteById($conexion, $id){
 }
 
 //FUNCIONES DE DATOS INSTITUCIONALES
+function buscarDatosInstByCodModular($conexion, $cod_modular){
+    $sql = "SELECT * FROM datos_institucionales WHERE cod_modular=$cod_modular";
+    return mysqli_query($conexion, $sql);
+}
 
+//FUNCIONES DE PROGRAMA DE ESTUDIOS
+function buscarProgEstudiosByCodigo($conexion, $codigo){
+    $sql = "SELECT * FROM programa_estudios WHERE codigo='$codigo'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarProgEstudiosById($conexion, $id){
+    $sql = "SELECT * FROM programa_estudios WHERE id=$id";
+    return mysqli_query($conexion, $sql);
+}
+
+//FUNCIONES DE MODULOS FORMATIVOS
+function buscarModulosFormativosByDescripcion($conexion, $descripcion){
+    $sql = "SELECT * FROM modulo_profesional WHERE descripcion='$descripcion'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarModulosFormativosById($conexion, $id){
+    $sql = "SELECT * FROM modulo_profesional WHERE id=$id";
+    return mysqli_query($conexion, $sql);
+}
+
+//FUNCIONES DE MODULOS FORMATIVOS
+function buscarUnidDidacByDescripcion($conexion, $descripcion){
+    $sql = "SELECT * FROM unidad_didactica WHERE descripcion='$descripcion'";
+    return mysqli_query($conexion, $sql);
+}
+function buscarUnidDidacById($conexion, $id){
+    $sql = "SELECT * FROM unidad_didactica WHERE id=$id";
+    return mysqli_query($conexion, $sql);
+}
 
 //FUNCIONES MOSTRAR
 function mostrarDatosInstitucionales($conexion){
@@ -170,5 +204,15 @@ function mostrarEstudiantes($conexion){
     $sql = "SELECT * FROM estudiante";
     return mysqli_query($conexion, $sql);
 }
+
+//JOINS
+function mostrarModulosVSProgrmaEstudios($conexion){
+    $sql = "SELECT md.id, md.descripcion,md.nro_modulo,pe.nombre
+    FROM modulo_profesional md
+    JOIN programa_estudios pe
+    ON md.id_programa_estudio = pe.id";
+    return mysqli_query($conexion, $sql);
+}
+
 
 ?>

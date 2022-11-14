@@ -57,20 +57,20 @@ include "include/verificar_sesion.php";
                           <th>Id</th>
                           <th>descripcion</th>
                           <th>nro de modulo</th>
-                          <th>id programa estudio</th>
+                          <th>Programa Estudios</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_modulos_formativos = mostrarModulosFormativos($conexion);
+                        $b_modulos_formativos = mostrarModulosVSProgrmaEstudios($conexion);
                         while ($res_b_modulos_formativos = mysqli_fetch_array($b_modulos_formativos)) {
                         ?>
                         <tr>
                           <td><?php echo $res_b_modulos_formativos['id']; ?></td>
                           <td><?php echo $res_b_modulos_formativos['descripcion']; ?></td>
                           <td><?php echo $res_b_modulos_formativos['nro_modulo'];  ?></td>
-                          <td><?php echo $res_b_modulos_formativos['id_programa_estudio']; ?></td>
+                          <td><?php echo $res_b_modulos_formativos['nombre']; ?></td>
                           <td>
                             <a href="EditarModulosFormativos.php?id=<?php echo $res_b_modulos_formativos['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="OperacionEliminar/EliminarModulosFormativos.php?id=<?php echo $res_b_modulos_formativos['id']; ?>" class="btn btn-danger">Eliminar</a>

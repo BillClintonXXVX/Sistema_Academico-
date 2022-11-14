@@ -84,8 +84,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_DatosInst['correo']; ?></td>
                           <td><?php echo $res_b_DatosInst['nro_resolucion']; ?></td>
                           <td>
-                          <a href="EditarDatosInstitucionales.php?id=<?php echo $res_b_DatosInstitucionales['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="OperacionEliminar/EliminarDatosInstitucionales.php?id=<?php echo $res_b_DatosInstitucionales['id']; ?>" class="btn btn-danger">Eliminar</a>
+                          <a href="EditarDatosInstitucionales.php?id=<?php echo $res_b_DatosInst['cod_modular']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="OperacionEliminar/EliminarDatosInstitucionales.php?id=<?php echo $res_b_DatosInst['cod_modular']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

@@ -1,8 +1,8 @@
 <?php
 include "../include/conexion.php"; 
-$id = $_GET['id'];
+$cod_modular = $_GET['id'];
 
-$sql = "DELETE FROM datos_institucionales WHERE id='$id'";
+$sql = "DELETE FROM datos_institucionales WHERE cod_modular ='$cod_modular'";
 $ejecutar = mysqli_query($conexion, $sql);
 
 if ($ejecutar) {

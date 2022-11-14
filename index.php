@@ -36,11 +36,11 @@ include "include/busquedas.php";
         <?php include "include/menu.php" ?>  
         <!-- Menu en la parte superior -->
         <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="row">
-            <div class="col-md-8 col-sm-8 col-xs-12">
+        <div class="right_col" role="main" >
+          <div class="row" style="background-image: url(Gentella/production/images/instituto.webp); height:100vh;background-repeat:no-repeat;background-size:contain;margin-top:60px">
+            <div class="col-md-8 col-sm-8 col-xs-12" >
               <?php  $_SESSION['id_usu_sisacad_iesthuanta']; ?>
-              <img src="Gentella/production/images/instituto.webp" alt="">
+              
               
             </div>
           </div>
