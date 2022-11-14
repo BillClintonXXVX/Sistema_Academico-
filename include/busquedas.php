@@ -121,6 +121,12 @@ function buscarUnidDidacById($conexion, $id){
     return mysqli_query($conexion, $sql);
 }
 
+//FUNCIONES DE MODULOS FORMATIVOS
+function buscarProgUnidDidacById($conexion, $id){
+    $sql = "SELECT * FROM programacion_unidad_didactica WHERE id=$id";
+    return mysqli_query($conexion, $sql);
+}
+
 //FUNCIONES MOSTRAR
 function mostrarDatosInstitucionales($conexion){
     $sql = "SELECT * FROM datos_institucionales";
