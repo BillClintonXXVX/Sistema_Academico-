@@ -76,18 +76,14 @@ if (!empty($_SESSION['id_usu_sisacad_iesthuanta'])) {
 
                   <div>
                     <h1><i ></i> <b>I.E.S.T.P. "HUANTA"</b></h1>
-                    <P><b>Bienvenido a la plataforma de Portafolio Docente, Inicie Sesion para acceder en modo Administrador</b></P>
-                    <img width="150px" src="Gentella/img/logo iestp.png" alt="">
+                    <h5><b>Bienvenido a la plataforma de Portafolio Docente, Inicie Sesion para acceder en modo Administrador</b></h5>
+
                   </div>
                 </div>
               </form>
             </section>
           </div>
-
-        
       </div>
-
-      
     </div>
   </body>
 </html>

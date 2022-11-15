@@ -12,7 +12,7 @@ include "include/busquedas.php";
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gentelella Alela! | </title>
+    <title>Inicio! | </title>
     <!-- Bootstrap -->
     <link href="Gentella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -37,7 +37,7 @@ include "include/busquedas.php";
         <!-- Menu en la parte superior -->
         <!-- page content -->
         <div class="right_col" role="main" >
-          <div class="row" style="background-image: url(Gentella/production/images/instituto.webp); height:100vh;background-repeat:no-repeat;background-size:contain;margin-top:60px">
+          <div class="row" style="background-image: url(Gentella/img/Instituto.jpeg); height:100vh;background-repeat:no-repeat;background-size:contain;margin-top:60px">
             <div class="col-md-8 col-sm-8 col-xs-12" >
               <?php  $_SESSION['id_usu_sisacad_iesthuanta']; ?>
               

@@ -1,7 +1,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.php"  class="site_title"><i class="fa fa-paw"></i> <span>SIS-AC!</span></a>
+              <a href="index.php"><i><img src="Gentella/img/logo iestp.png" alt="..." class="img-circle profile_img"></i> <span></span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -26,7 +26,7 @@
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
+                <h3>MENU GENERAL</h3>
                 <ul class="nav side-menu">
                   <li><a href="index.php"><i class="fa fa-home"></i> Inicio </a>
                     
@@ -102,15 +102,15 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
+                    <li><a href="javascript:;"> Perfil</a></li>
                     <li>
                       <a href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
+                        <span class="badge bg-red pull-right">100%</span>
+                        <span>Ajustes</span>
                       </a>
                     </li>
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="Operacion/cerrar_sesion.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                    <li><a href="javascript:;">Ayuda</a></li>
+                    <li><a href="Operacion/cerrar_sesion.php"><i class="fa fa-sign-out pull-right"></i>Cerrar Sesión</a></li>
                   </ul>
                 </li>
 
@@ -124,7 +124,7 @@
                       <a>
                         <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
-                          <span>John Smith</span>
+                          <span>SIS-AC</span>
                           <span class="time">3 mins ago</span>
                         </span>
                         <span class="message">
