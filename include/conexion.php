@@ -4,6 +4,6 @@ $conexion = mysqli_connect("localhost", "root", "", "sisacad");
 if ($conexion) {
 
 } else {
-   echo "conexion fallida";
+   echo "Intenetelo De Nuevo";
 }
 ?>
