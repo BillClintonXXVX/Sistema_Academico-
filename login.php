@@ -34,11 +34,7 @@ if (!empty($_SESSION['id_usu_sisacad_iesthuanta'])) {
         background-repeat:no-repeat;
         background-size:cover; 
         height:100vh;
-        
-
       }
-
-
     </style>
 
   </head>
