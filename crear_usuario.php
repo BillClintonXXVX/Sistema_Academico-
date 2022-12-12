@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Crear Usuario | </title>
-    <a href="index.php"><i><img src="Gentella/img/logo iestp.png" alt="..." class="img-circle profile_img"></i> <span></span></a>
+    
 
     <!-- Bootstrap -->
     <link href="Gentella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,6 +31,7 @@
       <div class="login_wrapper">
 
           <section class="login_content">
+          <img width="150px" src="Gentella/img/logo iestp.png" alt="">
             <form action="OperacionRegistrar/RegistrarUsuarioInicio.php" method="POST">
               <h1>Crear Cuenta</h1>
               <div>
