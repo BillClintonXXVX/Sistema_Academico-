@@ -30,7 +30,7 @@ if (!empty($_SESSION['id_usu_sisacad_iesthuanta'])) {
     <style>
      
       .background-image{
-        background-image: url('Gentella/img/amanda.jpg'); 
+        background-image: url('img/amanda.jpg'); 
         background-repeat:no-repeat;
         background-size:cover; 
         height:100vh;
@@ -46,7 +46,7 @@ if (!empty($_SESSION['id_usu_sisacad_iesthuanta'])) {
       <div class="login_wrapper" style="margin-top:0">
         <div class="animate form login_form">
             <section class="login_content">
-            <img width="150px" src="Gentella/img/logo iestp.png" alt="">
+            <img width="150px" src="img/logo iestp.png" alt="">
               <form method="POST" action="Operacion/iniciar_sesion.php">
                 <h1><b>Inicio de Sesión</b></h1>
                 <div>

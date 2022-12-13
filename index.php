@@ -37,7 +37,7 @@ include "include/busquedas.php";
         <!-- Menu en la parte superior -->
         <!-- page content -->
         <div class="right_col" role="main" >
-          <div class="row" style="background-image: url(Gentella/img/Instituto.jpeg); height:100vh;background-repeat:no-repeat;background-size:contain;margin-top:60px">
+          <div class="row" style="background-image: url(img/Instituto.jpeg); height:100vh;background-repeat:no-repeat;background-size:contain;margin-top:60px">
             <div class="col-md-8 col-sm-8 col-xs-12" >
               <?php  $_SESSION['id_usu_sisacad_iesthuanta']; ?>
               
