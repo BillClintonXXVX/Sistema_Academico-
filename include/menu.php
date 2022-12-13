@@ -1,9 +1,9 @@
+
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="index.php"><i><img src="img/logo iestp.png" alt="..." class="img-circle profile_img"></i> <span></span></a>
             </div>
-
             <div class="clearfix"></div>
              <?php
             $buscar_userdocente_sesion = buscarUserDocenteById($conexion, $_SESSION['id_usu_sisacad_iesthuanta']);

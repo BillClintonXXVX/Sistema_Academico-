@@ -8,6 +8,7 @@
         </footer>
         <!-- /footer content -->
       </div>
+      <link rel="shortcut icon" href="img/logo iestp.png">
     </div>
     <!-- jQuery -->
     <script src="Gentella/vendors/jquery/dist/jquery.min.js"></script>
