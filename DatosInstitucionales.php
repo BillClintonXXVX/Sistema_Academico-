@@ -44,9 +44,6 @@ include "include/verificar_sesion.php";
                   <div class="x_title">
                     <h2>Datos Institucionales</h2>
                     <ul class="nav navbar-right">
-                      <li>
-                        <a href="RegistroDatosInstitucionales.php" class="btn btn-success">Agregar Nuevo</a>
-                      </li>
                     </ul>
                     <div class="clearfix"></div>
                   </div>
@@ -86,7 +83,6 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_DatosInst['nro_resolucion']; ?></td>
                           <td>
                           <a href="EditarDatosInstitucionales.php?id=<?php echo $res_b_DatosInst['cod_modular']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="OperacionEliminar/EliminarDatosInstitucionales.php?id=<?php echo $res_b_DatosInst['cod_modular']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

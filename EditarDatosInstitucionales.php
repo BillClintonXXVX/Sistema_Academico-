@@ -81,9 +81,11 @@ $res_b_datosInst = mysqli_fetch_array($busc_datosInst);
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Correo :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="email" name="correo" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $res_b_datosInst['correo']; ?>">
+                          <input type="text" name="correo" required="required" class="form-control col-md-7 col-xs-12" value="<?php echo $res_b_datosInst['correo']; ?>">
                         </div>
                       </div>
+
+                      
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Numero De Resolucion :
@@ -94,13 +96,11 @@ $res_b_datosInst = mysqli_fetch_array($busc_datosInst);
                       </div>
 
 
-                      
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <a href="DatosInstitucionales.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
                           
-						              <button class="btn btn-primary" type="reset">Limpiar</button>
                           <button type="submit" class="btn btn-success">Actualizar Datos</button>
                         </div>
                       </div>
