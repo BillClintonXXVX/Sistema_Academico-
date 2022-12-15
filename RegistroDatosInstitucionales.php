@@ -75,7 +75,7 @@ include "include/header.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Telefono :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="telefono" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="telefono" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 

@@ -138,7 +138,7 @@ $res_b_docente = mysqli_fetch_array($busc_docente);
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                           <a href="Docentes.php"><button class="btn btn-primary" type="button">Cancelar</button></a>
                           
-						    <button class="btn btn-primary" type="reset">Limpiar</button>
+
                           <button type="submit" class="btn btn-success">Actualizar Datos</button>
                         </div>
                       </div>
