@@ -30,7 +30,7 @@ if (!empty($_SESSION['id_usu_sisacad_iesthuanta'])) {
     <style>
      
       .background-image{
-        background-image: url('img/AMANDA.jpg'); 
+        background-image: url('img/portada.jpg'); 
         background-repeat:no-repeat;
         background-size:cover; 
         height:100vh;
