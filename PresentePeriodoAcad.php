@@ -44,9 +44,6 @@ include "include/verificar_sesion.php";
                   <div class="x_title">
                     <h2>Presente Periodo Academico</h2>
                     <ul class="nav navbar-right">
-                      <li>
-                        <a href="RegistroPresentePeriodoAcad.php" class="btn btn-success">Agregar Nuevo</a>
-                      </li>
                     </ul>
                     <div class="clearfix"></div>
                   </div>

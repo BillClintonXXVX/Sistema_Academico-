@@ -74,6 +74,7 @@ include "include/verificar_sesion.php";
                           <td>
                           
                             <a href="OperacionEliminar/EliminarUserDocente.php?id=<?php echo $res_b_user_docente['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <button type="submit" class="btn btn-success">Editar</button>
                           </td>
                         </tr>
                         <?php
